@@ -1,0 +1,912 @@
+
+:root{
+  --primaryGreen: #22502A;
+  --primaryBlue: #255048;
+  --background: #EBEBE0;
+  --primaryGrey: #768B7A;
+  --accent: #929D15;
+  --secondaryFont: #FFFFFF;
+  --paragraph: 20px;
+  --header2: 50px;
+}
+
+/*blok1*/
+
+
+.navigatie{
+  height: 5.5vw;
+  /*margin-top: -2vw;*/
+  position: relative;
+  z-index: 1000;
+  padding-bottom: -10vw;
+  background-color: rgba(37, 80, 72, 0.6);
+}
+
+.navigatie:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-nav{
+  display: none;
+  opacity: 100%;
+}
+
+.navbar-toggler{
+  margin-bottom: 10px;
+}
+
+.nav-item{
+  opacity: 100%;
+}
+
+.nav-link{
+  color: white !important;
+  font-weight: 600;
+  font-size: 1vw;
+  opacity: 100% !important;
+  transition: transform 200ms;
+}
+
+
+.navText{
+  margin-top: 0.7vw;
+}
+
+.nav-link:hover{
+  transform: scale(1.1);
+}
+
+.nav-link:active{
+  color: var(--accent) !important;
+}
+
+.logoWit{
+  margin-top: 0;
+  width: 4.1vw;
+}
+
+
+@media screen and (min-width: 1721px){
+  .logoWit{
+    width: 35%;
+  }
+
+  .navText{
+    /*margin-top: 30px;*/
+  }
+}
+
+@media screen and (max-width: 1420px){
+  .navigatie{
+    height: 6.2em;
+    margin-top: -1.5vw;
+  }
+  .nav-item{
+    font-size: 90%;
+  }
+
+  .logoWit{
+    width: 40%;
+    margin-top: -1.8vw;
+  }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+  .navText{
+    font-size: 1.5vw !important;
+  }
+
+  .logoWit{
+    width: 6.5vw;
+    margin-top: 0.3vw;
+  }
+
+  .navigatie{
+    margin-top: 0;
+  }
+
+  .navText{
+    margin-top: 1.5vw;
+  }
+}
+
+
+@media screen and (max-width: 991px){
+  .navigatie{
+    width: 40%;
+    padding-top: 40px;
+    z-index: 10;
+  }
+
+  .navigatie:before{
+    background-image: none;
+  }
+
+  .navList{
+    border-radius: 100px;
+    opacity: 95%;
+  }
+
+  .navText{
+    margin: -1vw 0 3vw 0;
+    font-size: 3vw !important;
+  }
+
+  #navbarSupportedContent{
+    margin: 0 10vw 0 10vw;
+  }
+
+
+  .nav-item:nth-child(odd){
+    background-color: #31685E;
+  }
+
+  .nav-item:nth-child(even){
+    background-color: #255048;
+  }
+
+
+  .nav-item{
+    /*background-color: #255048;*/
+    padding-top: 20px;
+    margin: -5px;
+
+  }
+
+
+  .home-nav{
+    display: initial;
+    margin-top: 20px;
+    border-radius: 50px 50px 0 0px;
+  }
+  .logo-nav{
+    display: none;
+  }
+
+  .contact-nav{
+    border-radius: 0 0px 50px 50px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .navigatie{
+    background-image: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #navbarSupportedContent{
+    margin: 0 5vw 0 5vw;
+  }
+
+  .navText{
+    margin: -1vw 0 6vw 0;
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (max-width: 330px){
+  #navbarSupportedContent{
+    margin: 0 2vw 0 2vw;
+  }
+
+  .navText{
+    margin: -2vw 0 7vw 0;
+    font-size: 5.1vw !important;
+  }
+}
+
+
+
+/*algemene stijl*/
+
+
+
+
+
+.beheerBtn, .bedrijfBtn{
+  border-style: none;
+  border-radius: 15px;
+  color: white;
+  width: 300px;
+  opacity: 90%;
+  font-size: 1.2vw;
+  font-weight: 700;
+  transition: transform 200ms;
+}
+
+.logo-header{
+  transition: transform 400ms;
+}
+
+.logo-header:hover,.beheerBtn:hover, .bedrijfBtn:hover {
+  transform: scale(1.1);
+}
+
+.beheerBtn{
+  border:4px solid white;
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+
+.bedrijfBtn{
+  border:4px solid var(--primaryBlue);
+  background-color: var(--primaryBlue);
+}
+
+
+.bedrijfBtn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+/*h1*/
+.section-title-links1, .section-title-rechts1{
+  font-size: 2.8vw;
+  color:  var(--primaryBlue);
+  font-weight: 700;
+  padding-left: 3vw;
+}
+
+/*h2*/
+.blok5Hoe > div > h2, .blok3Bedrijf > div > h2, section.pricing > div > h2,
+.blok2Realisaties > h2, .puntHeaderContainer > h2, .contactFormTitle, .voordelenHeader {
+  font-size: 2vw;
+  color:  var(--primaryBlue);
+}
+
+/*h4*/
+.section-subTitle-rechts1, .section-subTitle-links1, .naamHeaderKaart{
+  font-size: 1.1vw;
+  color:  var(--primaryGreen);
+  font-weight: 500;
+}
+
+/*p*/
+.section-para-rechts1, .section-para-links1, .telefoonNummer, .achievementPara{
+  font-size: 1.1vw;
+}
+
+
+.blok2Home, .blok4Home, .blok4beheer, .blok1BeheerMee, .blok1Bedrijf, .block1Overons, .blok2Realisaties
+, .blok1Realisaties{
+  padding: 5vw 5vw 7vw 5vw !important;
+}
+
+/*linkstijl*/
+
+.link1{
+  text-decoration: none;
+  color: #768B7A;
+}
+
+.link1:hover{
+  color: #255048;
+  text-decoration: none;
+}
+
+.link2{
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.link2:hover{
+  color: #3dd5f3;
+  text-decoration: none;
+}
+
+
+/*voor privacybeleid en coockiebeleid*/
+
+
+
+.linkedHeaderContainer{
+  text-align: center;
+}
+
+.linkedHeader{
+  padding-top: 8vw;
+  font-size: 3.8vw;
+  color:  var(--primaryBlue);
+  font-weight: 700;
+}
+
+.contactGegevens, .uitlegContainer{
+  padding: 0 0 4vw 18vw;
+}
+
+.contactGegevens{
+  padding-top: 6vw;
+}
+
+.contactGegevens > p {
+  font-weight: 500;
+  font-size: 1.6vw;
+  color: #768B7A;
+}
+
+.uitlegContainer{
+  padding-right: 10vw;
+}
+
+.uitlegContainer{
+  font-size: 1.4vw;
+}
+
+/*voor de heading van home en bedrijven*/
+
+
+/* video background */
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /*bottom: 0;*/
+  z-index: -1;
+}
+.background-image {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /*bottom: 0;*/
+  z-index: -1;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 18vw
+}
+
+.heading > h1 {
+  font-size: 4vw;
+}
+
+.heading > h4{
+  font-size: 2vw;
+}
+
+.logo-header{
+  width: 10vw;
+  margin-top: 4vw;
+  margin-bottom: 20px;
+}
+
+.button-box {
+  text-align:center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/*enkel nodig als je met een fixed video werkt*/
+
+
+.content{
+  padding: 0 0 10px 0;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+
+/*kolom met foto links en tekst rechts*/
+
+.fotoLinksTekstRechts1, .fotoRechtsTekstLinks1{
+  vertical-align: middle;
+  display: table-cell;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.fotoLinks1, .fotoRechts1, .fotoLinks2, .fotoRechts2 {
+  background-size: cover !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  background-repeat: no-repeat !important;
+  transition: transform 200ms;
+}
+
+.fotoLinks1:hover, .fotoRechts1:hover{
+  transform: scale(0.98);
+}
+
+
+.tekstKolomRechts1{
+  margin-left: 2vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+
+.treeImageTitle{
+  width: 2.2vw;
+  position: absolute;
+  margin-top: 2vw !important;
+}
+
+.treeImageTitle2{
+  margin-top: -0.4vw !important;
+}
+
+/*kolom met foto rechts en tekst links */
+
+.fotoRechts1{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.TreeImageContainer2{
+  position: relative;
+}
+
+.tekstKolomLinks1{
+  margin-right: 2vw;
+  padding: 0 1vw 0 0;
+}
+
+
+
+/*gemeenschappelijke stijl voor sectie met bosfoto als achtergrond*/
+
+
+.bosTextContainer{
+  display:table-cell;
+  vertical-align:middle;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+
+.bosHeader{
+  font-size: 1.9vw;
+}
+
+.bosText{
+  font-size: 1.4vw;
+}
+
+
+
+
+/*secties met gekleurde achtergrond*/
+
+
+
+
+
+.fotoLinks2, .fotoRechts2{
+  border-radius: 0 !important;
+}
+
+.tekstContainerLinks2{
+  padding-left: 7vw;
+}
+
+.tekstContainerRechts2{
+  padding-right: 7vw;
+  padding-left: 5vw;
+}
+
+.tekstKolomRechts2{
+  padding-top: 4vw;
+}
+
+
+
+
+/*kaarten partners en newsfeed*/
+
+
+.containerm {
+  min-height: 20vw;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.img {
+  overflow: hidden;
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  cursor: pointer;
+  margin: 0 15px;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
+  transition: .5s;
+  background-color: #555;
+  text-align: center;
+}
+
+.img:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  transform: translate(-140%, -50%);
+  background-color: var(--primaryBlue);
+  opacity: 0.9;
+  border-radius: 50%;
+  transition: .8s
+}
+
+.img:hover:after {
+  transform: translate(-50%, -50%)
+}
+
+.img:hover .achievementHeader, .img:hover .logo{
+  display:none;
+}
+
+
+.img:hover img {
+  transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
+}
+
+.achievementHeader{
+  padding: 0 1vw 0 1vw;
+  font-size: 1.6vw;
+  color: white;
+  margin-top: 2vw;
+  position: relative;
+  z-index: 100;
+}
+
+.backgroundImg {
+  height: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .8s;
+  position: absolute;
+}
+
+.achievementPara {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-2000px, -50%);
+  color: #fff;
+  transition: .8s;
+  transition-timing-function: ease-in
+}
+
+.img:hover p {
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease
+}
+
+.iconboxGrid{
+  padding: 2vw 8vw 0 8vw;
+}
+
+.iconbox{
+  text-align: center;
+  width: 100%;
+  padding: 1vw 2vw 1vw 2vw;
+}
+
+.iconImg{
+  width: 5vw;
+  height: 5vw;
+  margin-top: 1vw;
+}
+
+.iconbox > h3{
+  font-size: 1.6vw;
+  margin-top: 0.5vw;
+  color: var(--primaryBlue) !important;
+}
+
+.iconbox > p{
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  font-weight: 500;
+  color: var(--primaryBlue) !important;
+}
+
+.iconbox:hover{
+  transform: scale(0.95);
+  transition: 300ms;
+}
+
+
+/*contactkaarten*/
+
+
+.partnerCard{
+  background-color: #FFFFFF;
+  padding:0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius:4px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+
+.partnerCard:hover{
+  transform: scale(0.95);
+  transition: 300ms;
+}
+
+.partnerCard > .card-body{
+  background-color: #F6FFF4;
+
+}
+
+.partnerCard > .card-footer{
+  background-color: var(--primaryBlue);
+  margin-bottom: -1vw;
+}
+
+.linkKnop
+{
+  color: white;
+}
+
+
+@media screen and (max-width: 1100px){
+  #background-video{
+    height: 134vw;
+  }
+
+
+  /*algemene stijl*/
+
+
+  .content{
+    margin-top: 75vw;
+  }
+
+  .logo-header{
+    width: 20vw;
+    margin-top: 10vw;
+    margin-bottom: 20px;
+  }
+
+  .heading > h1{
+    font-size: 6vw
+  }
+
+  .heading > h4{
+    font-size: 4vw;
+  }
+
+
+
+  .tekstKolomLinks1{
+    padding-right: 1.5vw;
+  }
+
+  .section-title-links1, .section-title-rechts1, .bosHeader, .voordelenHeader{
+
+    padding-top: 3vw;
+    padding-left: 0;
+    font-size: 5vw !important;
+  }
+
+  .section-subTitle-rechts1, .section-subTitle-links1, .section-para-rechts1, .bosText, .telefoonNummer{
+    font-size: 2vw !important;
+  }
+
+  .bedrijfBtn, .beheerBtn, .contactFormTitle, .naamHeaderKaart {
+    font-size: 3vw;
+  }
+
+  .treeImageTitle{
+    width: 3.2vw;
+    position: absolute;
+    margin-right: 1vw;
+    margin-top: 4.5vw !important;
+  }
+
+  .treeImageTitle2{
+    margin-top: 7vw !important;
+    margin-right: 5vw;
+  }
+
+
+  .iconboxGrid{
+    padding: 2vw 4vw 0 4vw;
+  }
+
+  .iconbox{
+    text-align: center;
+    width: 100%;
+    padding: 1vw 3vw 1vw 3vw;
+  }
+
+  .iconImg{
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .iconbox > h3{
+    font-size: 3vw;
+    margin-top: 1vw;
+  }
+
+  .iconbox > p{
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+
+  /*partners en over ons*/
+
+  .rowContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tekstContainerLinks1Partner{
+    order: 2;
+  }
+
+  .tekstContainerRechts1Partner{
+    order: 1;
+  }
+
+
+}
+
+
+@media screen and  (max-width: 991px){
+  .blok2Home{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tekstKolomLinks1{
+    padding-right: 0 !important;
+  }
+
+  .fotoLinksTekstRechts1{
+    order: 2;
+  }
+
+  .tekstContainerRechts1{
+    order: 1;
+  }
+
+  .treeImageTitle{
+    margin-top: 6.5vw!important;
+    width: 4vw;
+  }
+
+  .treeImageTitle2{
+    margin-top: 2vw !important;
+  }
+
+  .uniekeTitleImage{
+    margin-top: 3vw !important;
+  }
+}
+
+@media screen and  (max-width: 600px){
+    /*header op landing page*/
+
+
+    .logo-header{
+      width: 30vw;
+    }
+    .heading > h1{
+      font-size: 10vw;
+    }
+
+    .heading > h4, .section-title-rechts1, .section-title-links1, .bosHeader, .voordelenHeader
+    , .tarievenHeader, .contactFormTitle, .voordelenHeader {
+      font-size: 7vw !important;
+    }
+
+    .section-subTitle-rechts1, .section-para-rechts1, .section-subTitle-links1, .bosText,
+    .bedrijfBtn, .beheerBtn{
+      font-size: 5vw !important;
+    }
+
+    /*blok1 fotolinks en tekst rechts*/
+
+
+    .bedrijfBtn{
+      margin-left: 6% !important;
+    }
+
+    .treeImageTitle2{
+      width: 7vw !important;
+      margin-top: 0vw !important;
+    }
+
+
+  /*de iconen*/
+
+  .iconImg{
+    width: 25vw;
+    height: 25vw;
+    margin-top: 3vw;
+  }
+
+  .iconbox > h3{
+    font-size: 6vw;
+  }
+
+  .iconbox > p {
+    font-size: 4.5vw;
+  }
+
+  /*partnerkaarten*/
+
+  .rowContainer{
+    margin-left: 8vw;
+  }
+
+  .partnerCard{
+    margin-top: 10vw;
+  }
+
+  .naamHeaderKaart{
+    font-size: 7vw;
+  }
+
+  .telefoonNummer{
+    font-size: 5vw !important;
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 330px){
+  html{
+    max-width: 100vw !important;
+  }
+
+  .beheerBtn, .bedrijfBtn{
+    width: 200px;
+  }
+
+  .heading > h1{
+    font-size: 11vw;
+  }
+
+  .heading > h4, .section-title-rechts1, .section-title-links1, .bosHeader, .voordelenHeader,
+  .tarievenHeader{
+    font-size: 8vw !important;
+  }
+
+  .section-subTitle-rechts1, .section-para-rechts1, .section-subTitle-links1, .bosText,
+  .bedrijfBtn, .beheerBtn{
+    font-size: 6vw !important;
+  }
+}

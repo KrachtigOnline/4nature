@@ -1,0 +1,197 @@
+.content{
+  margin-top: -10vw;
+}
+
+/*blok1*/
+.blok1Realisaties{
+  padding-top: 10vw !important;
+}
+
+
+.fotoLinks1 {
+  background: url("../../assets/img/realisatieFoto.jpg"), no-repeat center center;
+  height: 32vw !important;
+}
+
+
+/*blok2*/
+.blok2Realisaties{
+  background-color: #E8FFE3;
+  margin-bottom: -6vw;
+
+}
+
+.blok2Realisaties > h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 6vw;
+
+}
+
+.containerm{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.boxContainer{
+  max-width: 80%;
+}
+
+.imgContainer{
+
+}
+
+.img {
+  overflow: hidden;
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
+  text-align: center;
+  margin-bottom: 4vw;
+}
+
+.img:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  transform: translate(-140%, -50%);
+  background-color: var(--primaryBlue);
+  opacity: 0.9;
+  border-radius: 50%;
+}
+
+.img:hover:after {
+  transform: translate(-50%, -50%);
+}
+
+.img:hover .achievementHeader{
+  display:none;
+}
+
+
+.img:hover img {
+  transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
+}
+
+.achievementHeader{
+  padding: 0 1vw 0 1vw;
+  font-size: 1.6vw;
+  color: white;
+  margin-top: 2vw;
+  position: relative;
+  z-index: 100;
+  transition: transform 2000ms;
+}
+
+.backgroundImg {
+  height: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .8s;
+  position: absolute;
+}
+
+.achievementPara {
+  position: absolute;
+  font-size: 1.3vw;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-2000px, -50%);
+  color: #fff;
+  transition: .8s;
+  transition-timing-function: ease-in
+}
+
+.img:hover p {
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease
+}
+
+
+@media screen and (max-width: 1100px){
+  .fotoLinks1{
+    height: 35vw !important;
+  }
+
+  .img {
+    height: 28vw !important;
+    width: 28vw !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .boxContainer{
+    max-width: 100%;
+  }
+
+  .img:after {
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .achievementHeader{
+    font-size: 2.5vw;
+  }
+
+  .achievementPara{
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .fotoLinksTekstRechts1{
+    padding-bottom: 10vw;
+    padding-top: 5vw;
+  }
+
+  .fotoLinks1{
+    height: 60vw !important;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+
+  .blok2Realisaties{
+    padding-bottom: 30vw !important;
+  }
+
+  .voordelenHeader{
+    padding-bottom: 10vw;
+    padding-top: 10vw;
+  }
+
+
+  .img {
+    height: 90vw !important;
+    width: 90vw !important;
+    margin-bottom: 8vw;
+  }
+
+  .img:after {
+    width: 80vw;
+    height: 85vw;
+  }
+
+  .achievementHeader{
+    font-size: 8vw;
+  }
+
+  .achievementPara{
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 330px){
+  .fotoLinks1{
+    margin-top: 15vw !important;
+  }
+}

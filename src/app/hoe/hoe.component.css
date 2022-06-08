@@ -1,0 +1,151 @@
+.content{
+  margin-top: -10vw;
+}
+
+
+/*blok2*/
+.blok2Hoe{
+  padding: 10vw 5vw 7vw 5vw !important;
+}
+
+
+.fotoLinks1 {
+  background: url("../../assets/img/community.jpg"), no-repeat center center;
+  height: 32vw !important;
+}
+
+
+
+
+/*blok3 en 4*/
+.blok3Hoe{
+  margin-top: 5vw;
+  display: flex !important;
+  background-color: #E8FFE3;
+}
+
+.tekstContainerLinks2{
+  height: 100%;
+
+}
+
+.blok4Hoe{
+  background-color: #E8FFE3;
+}
+
+
+.fotoRechts2{
+  background: url("../../assets/img/plantTrees.jpg"), no-repeat center center;
+  height: 30vw !important;
+}
+
+.fotoLinks2{
+  background: url("../../assets/img/tree-care.jpg"), no-repeat center center;
+  height: 30vw !important;
+}
+
+
+
+/*blok5*/
+
+
+.blok5Hoe{
+  margin-top: 10vw;
+}
+
+.blok5Hoe > div {
+  text-align: center;
+}
+
+.blok5Hoe > div > h2{
+  margin-bottom: 2vw;
+}
+
+.iconboxGrid{
+  padding: 2vw 8vw 0 8vw;
+}
+
+
+
+@media screen and (max-width: 1100px){
+  /*vlak onder de landing*/
+
+
+  .fotoLinks1 {
+    height: 40vw !important;
+  }
+
+  /*eerste groene blok*/
+
+  .blok3Hoe{
+    padding-top: 5vw;
+  }
+
+  .fotoRechtsTekstLinks1{
+    padding-right: 5vw !important;
+  }
+
+  /*tweede groene blok*/
+
+  .blok4Hoe{
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+  }
+
+  .fotoLinksTekstRechts1{
+    padding-left: 5vw;
+  }
+
+  /*iconen*/
+
+  .voordelenHeader{
+    padding: 0 3vw 0 3vw;
+  }
+}
+
+
+@media screen and (max-width: 991px){
+  /*onder de landing*/
+  .fotoLinksTekstRechts1{
+    padding-right: 5vw;
+  }
+  .fotoLinks1 {
+    height: 60vw !important;
+  }
+
+  /*eerste groene stuk*/
+  .blok3Hoe{
+    padding-top: 10vw;
+  }
+  .fotoRechtsTekstLinks1{
+    padding-left: 5vw;
+  }
+
+  .fotoRechts2{
+    margin-top: 5vw;
+    height: 60vw !important;
+  }
+
+  /*tweede groene stuk*/
+
+  .blok4Hoe{
+    padding-top: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .fotoLinks2{
+    height: 60vw !important;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  /*onder de landing*/
+
+  .bedrijfBtn{
+    margin-top: 5vw
+  }
+  .fotoLinksTekstRechts1{
+    padding-top: 15vw;
+  }
+}
