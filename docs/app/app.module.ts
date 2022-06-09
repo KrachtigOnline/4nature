@@ -18,7 +18,7 @@ import { CookieComponent } from './footer/cookie/cookie.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import {UtilityService} from './utility.service';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+//import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 // @ts-ignore
 // @ts-ignore
@@ -48,9 +48,12 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
   exports: [
     ReactiveFormsModule
   ],
-  providers: [UtilityService,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  providers: [UtilityService
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+// {provide: LocationStrategy, useClass: HashLocationStrategy}
