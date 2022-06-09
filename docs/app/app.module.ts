@@ -48,8 +48,7 @@ import {UtilityService} from './utility.service';
   exports: [
     ReactiveFormsModule
   ],
-  providers: [UtilityService
-  ],
+  providers: [UtilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
