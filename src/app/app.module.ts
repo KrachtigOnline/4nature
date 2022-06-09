@@ -17,9 +17,8 @@ import { PrivacyComponent } from './footer/privacy/privacy.component';
 import { CookieComponent } from './footer/cookie/cookie.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-import { FormGroup, FormBuilder } from  '@angular/forms';
 import {UtilityService} from './utility.service';
-
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 // @ts-ignore
 // @ts-ignore
@@ -49,7 +48,9 @@ import {UtilityService} from './utility.service';
   exports: [
     ReactiveFormsModule
   ],
-  providers: [UtilityService],
+  providers: [UtilityService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
